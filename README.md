@@ -9,7 +9,7 @@ A convolutional neural network for recognizing, locating, and detecting Organic 
 ![molecule-9](./readme-img/9.png)
 ![molecule-19](./readme-img/19.png)
 
-This is a convolutional implementation of "sliding window" so it's very computationally efficient.
+This is a convolutional implementation of "sliding window" so it's very computationally efficient, described in [this paper](https://arxiv.org/pdf/1312.6229.pdf).
 [AlexNet](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf) was modified to have only convolutional layers for this implementation.
 
 ![paper-demo](./demo-papers/demo.png)
