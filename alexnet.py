@@ -39,8 +39,7 @@ class AlexNet:
         fc7 = tf.layers.conv2d(dropout6, filters=4096, kernel_size=(1, 1), activation=tf.nn.relu, trainable=self.trainable, name="fc7")
         dropout7 = tf.layers.dropout(fc7, rate=self.dropout_rate)
 
-        logits = tf.layers.conv2d(dropout7, filters=self.num_classes, kernel_size=(1, 1), trainable=self.trainable, name="fc8")
-        self.logits = tf.reshape(logits, (logits.shape[0], 1))
+        self.logits = tf.layers.conv2d(dropout7, filters=self.num_classes, kernel_size=(1, 1), trainable=self.trainable, name="fc8")
 
 
 def lrn(x, radius, alpha, beta, name, bias=1.0):

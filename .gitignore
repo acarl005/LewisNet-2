@@ -10,3 +10,4 @@ negatives/pdfs/*.pdf
 tensorboard
 .ipynb_checkpoints
 tensorflow-ckpt
+temp-demo.png

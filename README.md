@@ -1,16 +1,18 @@
-LewisNet-1
+LewisNet-2
 ==========
 
-A convolutional neural network for recognizing Organic Chemical [Lewis Structures](https://en.wikipedia.org/wiki/Lewis_structure) and [Skeletal formulas](https://en.wikipedia.org/wiki/Skeletal_formula) build with Google's [Tensorflow](https://github.com/tensorflow/tensorflow).
+The successor to [LewisNet-1](https://github.com/acarl005/LewisNet-1).
+A convolutional neural network for recognizing, locating, and detecting Organic Chemical [Lewis Structures](https://en.wikipedia.org/wiki/Lewis_structure) and [Skeletal formulas](https://en.wikipedia.org/wiki/Skeletal_formula) in chemistry papers built with Google's [Tensorflow](https://github.com/tensorflow/tensorflow).
 
 ![molecule-1](./readme-img/1.png)
 ![molecule-2](./readme-img/2.png)
 ![molecule-9](./readme-img/9.png)
 ![molecule-19](./readme-img/19.png)
 
-This is modified from the [AlexNet](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf) architecture, with similar modifications to [this paper](https://arxiv.org/pdf/1311.2901.pdf).
+This is a convolutional implementation of "sliding window" so it's very computationally efficient.
+[AlexNet](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf) was modified to have only convolutional layers for this implementation.
 
-99% accuracy was achieved on the test set with only 3 epochs.
+![paper-demo](./demo-papers/demo.png)
 
 ## Why Build This
 
@@ -23,7 +25,7 @@ This involves two steps:
 1. Identification - not just classification, but determining the actual chemical formula
 
 This project is the first step.
-It can classify Lewis structures from *non* Lewis structures.
+It can *locate* Lewis structures in chemistry papers.
 
 
 ## Data Gathering
